@@ -28,7 +28,6 @@ var createGist = function(file_name, content, description, token){
 };
 
 var myGists = function (username, token){
-  // var token = 'ad4c5a546b78fa1cb652db42f50aeb2227162138'
   $.ajax({
   url: 'https://api.github.com/users/' + username + '/gists',
   type: 'GET',
