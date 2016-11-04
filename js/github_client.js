@@ -16,12 +16,11 @@ var createGist = function(file_name, content, description, token){
       Authorization: "token " + token
     },
     data: JSON.stringify(sourceData),
-    success: function(response) {
-      myGists(response.owner.login, token); 
-    },
     error: function(error) { 
       console.log("The request has" + error);
     }
+  }).done(function(response) {
+    myGists(response.owner.login, token);
   });
 }
 
