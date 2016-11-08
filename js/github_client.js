@@ -14,7 +14,7 @@ var createGist = function(file_name, content, description, token){
     type: 'POST',
     dataType: 'json',
     beforeSend: function(xhr) {
-      xhr.setRequestHeader("Authorization", "token " + token);
+      xhr.setRequestHeader("Authorization", "token " + "f5a87c64e892e1f0516fc04888ebcdd32154e309");
     },
     data: JSON.stringify(data)
   }).done(function(response) {
