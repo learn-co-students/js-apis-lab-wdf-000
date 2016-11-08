@@ -36,8 +36,8 @@ var myGists = function (username, token){
     $.each(gists.data, function(index, gist) {
       var gist_link = gist.html_url
       var gdescription = gist.description
-      var html = '<a href="' + gist_link + '">' + gdescription + '<\/a>'
-      $("myGists").append(html)
+      var html = '<li><a href="' + gist_link + '">' + gdescription + '<\/a><\/li>'
+      $("#myGists").append(html)
     });
   });
 };
