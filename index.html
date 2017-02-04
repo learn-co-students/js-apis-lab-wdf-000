@@ -4,6 +4,42 @@
 </head>
 <body>
 
+  <h1>Create Gists!</h1>
+  <form>
+    <div>
+      <label for="token">Token</label>
+      <input type="text" value="" name="token" id="token"/>
+    </div>
+
+    <div>
+      <label for="file-name">Filename</label>
+      <input type="text" name="file-name" value="" id="file-name"/>
+    </div>
+
+    <div>
+      <label for="description">Description</label>
+      <input type="text" name="description" value="" id="description"/>
+    </div>
+
+    <div>
+      <label for="contents">Contents</label>
+      <input type="text" name="contents" value="" id="contents"/>
+    </div>
+
+    <input type="submit" name="create-gist" value="Create Gist" id="create-gist" />
+
+  </form>
+
+  <hr />
+
+  <h2>Your Gists</h2>
+
+  <div id="gists">
+    <ul id="public-gists">
+      
+    </ul>
+  </div>
+
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/github_client.js"></script>
 </body>
