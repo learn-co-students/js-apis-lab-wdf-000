@@ -3,6 +3,37 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<h3>Create York Gist</h3>
+<form class="form" action="index.html" method="post">
+  <div>
+    <label for="token">Token</label>
+    <input type="text" name="token" id="token">
+  </div>
+
+  <div>
+    <label for="file_name">File name</label>
+    <input type="text" name="file_name" id="file_name">
+  </div>
+
+  <div>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description">
+  </div>
+
+  <div>
+    <label for="content">Content</label>
+    <input type="text" name="content" id="content">
+  </div>
+
+  <div class="button">
+    <button type="submit" name="button">Create Gists</button>
+  </div>
+</form>
+<br>
+<br>
+<div class="gists">
+
+</div>
 
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/github_client.js"></script>
