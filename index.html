@@ -3,6 +3,26 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <p>CREATE NEW GITHUB GIST</p>
+
+  <form>
+    <p><label for="token">Token</label>
+    <input type="text" name="token" id="token"></p>
+
+    <p><label for="file_name">Filename</label>
+    <input type="text" name="file_name" id="file_name"></p>
+
+    <p><label for="description">Description</label>
+    <textarea name="description" id="description"></textarea></p>
+
+    <p><label for="contents">Contents</label>
+    <textarea name="contents" id="contents"></textarea></p>
+
+    <input type="submit" value="create" id="submit"></p>
+  </form>
+
+  <p>PUBLIC GISTS:</p>
+  <div id="display"></div>
 
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/github_client.js"></script>
